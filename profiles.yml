@@ -8,7 +8,18 @@ dbt_training_dw:
       password: admin
       port: 5432
       dbname: dbt_training
-      schema: public
+      schema: dbt_tr_dev
+      threads: 1
+      keepalives_idle: 0 
+      connect_timeout: 10
+    prod:
+      type: postgres
+      host: localhost
+      user: admin
+      password: admin
+      port: 5432
+      dbname: dbt_training
+      schema: dbt_tr_prod
       threads: 1
       keepalives_idle: 0 
       connect_timeout: 10
