@@ -1,6 +1,6 @@
 {% docs employee_names %}
 
-# 従業員名
+# 従業員名テーブル
 
 ## 概要
 
