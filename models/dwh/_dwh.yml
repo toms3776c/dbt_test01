@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: employee_names
+    description: '{{ doc("employee_names") }}'
+    columns:
+      - name: employee_id
+        tests:
+          - not_null
+      - name: full_name
