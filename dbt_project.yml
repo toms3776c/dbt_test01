@@ -17,8 +17,11 @@ clean-targets: [target, dbt_packages]
 models:
   dbt_training:
     stg:
+      +schema: stg
       +materialized: incremental
     dwh:
+      +schema: dwh
       +materialized: incremental
     mart:
+      +schema: mart
       +materialized: table
