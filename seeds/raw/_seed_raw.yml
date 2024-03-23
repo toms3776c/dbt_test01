@@ -1,0 +1,18 @@
+version: 2
+
+seeds:
+  - name: jobs_jp
+    config:
+      schema: raw
+      columns:
+        - name: job_id
+          tests:
+            - unique
+            - not_null
+        - name: job_title_jp
+          tests:
+            - unique
+            - not_null
+      column_types:
+        job_id: numeric
+        job_title_jp: varchar
